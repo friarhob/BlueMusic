@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>BlueMusic</title>
 </head>
 
@@ -28,7 +29,11 @@
     <header id="banner">
         <div>
             <h1>
-                Playlist do Blue Na Prática
+                Playlist do
+                <span class="material-icons">
+                    play_circle
+                </span>
+                Blue Na Prática
             </h1>
             <h2>
                 Músicas autorizadas no YouTube
@@ -36,6 +41,41 @@
         </div>
         <img src=" {{ url_for('static', filename='img/img-home.png') }} " alt="">
     </header>
+
+    <section id="playlist">
+        <h3>Playlist</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Artista</th>
+                    <th>Player</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Teste</td>
+                    <td>Teste</td>
+                    <td>
+                        <audio controls src=""></audio>
+                    </td>
+                    <td>
+                        <a href="">Editar</a>
+                        <a href="">Apagar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Blue na Prática é uma iniciativa <a href="https://blueedtech.com.br/" target="_blank">Blue EdTech</a> </p>
+    </footer>
+
 </body>
 
 </html>
