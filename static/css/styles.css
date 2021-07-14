@@ -13,5 +13,75 @@
 html, body {
     width: 100%;
     height: 100%;
-    
+    scroll-behavior: smooth;
 }
+
+/* Styles from index.html */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 89, 235);
+    width: 100%;
+}
+
+nav a img {
+    max-width: 100%;
+    width: 2.5rem;
+    padding: .3rem;
+    margin-left: 1rem;
+    margin-top: .3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-out;
+}
+
+nav ul li a:hover {
+    color: #FF01ed;
+}
+
+header#banner {
+    display: flex;
+    padding: 80px;
+    background-color: #c3ffff;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 30rem;
+}
+
+header#banner img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+header#banner div {
+    width: 100%;
+
+}
+
+header#banner div h1 {
+    font-size: 7rem;
+    color: #3359ec;
+    text-shadow: 2px 2px 5px #00000050;
+}
+
+header#banner div h2 {
+    font-size: 2.4rem;
+    color: #FF01ed;
+    text-shadow: 2px 2px 5px #00000050;
+    margin-top: 20px;
+}
+/* End of index.html */
