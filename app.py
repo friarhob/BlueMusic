@@ -20,6 +20,10 @@ class Musica(db.Model):
 def index():
     return render_template("index.html")
 
+@app.route("/new")
+def new():
+    return render_template("new.html")
+
 if __name__ == "__main__":
     db.create_all()
     app.run(debug=True)

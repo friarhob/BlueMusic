@@ -152,3 +152,35 @@ footer a:hover {
 }
 
 /* End of index.html */
+
+
+
+/* Styles of new.html */
+
+section#new {
+    background: linear-gradient(#3359ec 50%, white 50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section#new a img#home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+section#new a img#gif {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* End of new.html */
