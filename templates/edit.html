@@ -19,15 +19,15 @@
             <form action="/edit/{{musica.id}}" method="POST">
                 <div class="label-float">
                     <input type="text" name="nome" id="nome" required value='{{musica.nome}}'>
-                    <label for="">Nome</label>
+                    <label for="nome">Nome</label>
                 </div>
                 <div class="label-float">
                     <input type="text" name="artista" id="artista" required value='{{musica.artista}}'>
-                    <label for="">Artista</label>
+                    <label for="artista">Artista</label>
                 </div>
                 <div class="label-float">
                     <input type="text" name="link" id="link" required value='{{musica.link}}'>
-                    <label for="">URL</label>
+                    <label for="link">URL</label>
                 </div>
                 <div class="justify-center">
                     <button type="submit">Atualizar</button>

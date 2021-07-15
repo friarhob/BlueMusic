@@ -137,7 +137,7 @@ footer p {
 }
 
 footer hr {
-    width: 60%;
+    width: 80%;
     margin: auto;
     border: 0.2px solid #3359ec;
 }
@@ -255,6 +255,5 @@ section#new h4 {
     text-shadow: 1px 1px 2px #FF01ed;
     margin-bottom: 2rem;
 }
-
 
 /* End of new.html */
