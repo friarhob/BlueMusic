@@ -163,7 +163,8 @@ section#new {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
 section#new a img#home {
@@ -208,7 +209,7 @@ section#new div.label-float input {
     border: 0;
     border-bottom: 2px solid #3359ec;
     background-color: transparent;
-    outline:none;
+    outline: none;
     min-width: 180px;
     font-size: 16px;
     transition: all 0.3s ease-out;
@@ -218,12 +219,13 @@ section#new div.label-float input {
 section#new div.label-float label {
     color: #3359ec;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     margin-top: 13px;
 }
 
-section#new div.label-float input:focus + label {
+section#new div.label-float input:focus+label,
+section#new div.label-float input:valid+label {
     margin-top: 0px;
     font-size: 12px;
 }
