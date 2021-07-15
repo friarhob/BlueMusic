@@ -223,5 +223,35 @@ section#new div.label-float label {
     margin-top: 13px;
 }
 
+section#new div.label-float input:focus + label {
+    margin-top: 0px;
+}
+
+section#new button {
+    background-color: transparent;
+    border-color: #3359ec;
+    color: #3359ec;
+    padding: .8rem;
+    font-size: 12px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+
+section#new button:hover {
+    background-color: #3359ec;
+    color: white;
+}
+
+section#new h4 {
+    text-align: center;
+    color: #3359ec;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px #FF01ed;
+    margin-bottom: 2rem;
+}
+
 
 /* End of new.html */
