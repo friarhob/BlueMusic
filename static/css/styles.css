@@ -163,6 +163,7 @@ section#new {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;;
 }
 
 section#new a img#home {
@@ -182,5 +183,45 @@ section#new a img#gif {
     margin: 0;
     padding: 1rem;
 }
+
+section#new div#card {
+    position: relative;
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 5px 5px 1px 0px #FF01ed80;
+    width: 400px;
+}
+
+section#new div.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section#new div.label-float input {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #3359ec;
+    background-color: transparent;
+    outline:none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+section#new div.label-float label {
+    color: #3359ec;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-top: 13px;
+}
+
 
 /* End of new.html */
