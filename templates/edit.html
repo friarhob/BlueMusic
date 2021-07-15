@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
+    <title>Nova Música - Músicas do Blue na Prática</title>
+</head>
+
+<body>
+    <section id="new">
+        <a href="/">
+            <img id="home" src=" {{ url_for('static', filename='img/minilogo.png') }} " alt="">
+        </a>
+        <div id="card">
+            <h4>Editar Música</h4>
+            <form action="/edit/{{musica.id}}" method="POST">
+                <div class="label-float">
+                    <input type="text" name="nome" id="nome" required value='{{musica.nome}}'>
+                    <label for="">Nome</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" name="artista" id="artista" required value='{{musica.artista}}'>
+                    <label for="">Artista</label>
+                </div>
+                <div class="label-float">
+                    <input type="text" name="link" id="link" required value='{{musica.link}}'>
+                    <label for="">URL</label>
+                </div>
+                <div class="justify-center">
+                    <button type="submit">Atualizar</button>
+                </div>
+            </form>
+        </div>
+        <a href="https://blueedtech.com.br" target="_blank">
+            <img id="gif" src=" {{ url_for('static', filename='img/logo-blue.gif') }} " alt="">
+        </a>
+    </section>
+</body>
+
+</html>

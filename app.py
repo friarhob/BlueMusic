@@ -36,9 +36,12 @@ def new():
         
     return render_template("new.html")
 
-@app.route("/edit/<id>")
+@app.route("/edit/<id>", methods=['GET','POST'])
 def edit(id):
-    return render_template("edit.html")
+    if(request.method == 'POST'):
+        pass
+    musica = Musica.query.get(id)
+    return render_template("edit.html", musica = musica)
 
 if __name__ == "__main__":
     db.create_all()
