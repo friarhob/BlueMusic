@@ -24,6 +24,10 @@ def index():
 def new():
     return render_template("new.html")
 
+@app.route("/edit/<id>")
+def edit(id):
+    return render_template("edit.html")
+
 if __name__ == "__main__":
     db.create_all()
     app.run(debug=True)

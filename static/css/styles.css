@@ -225,6 +225,7 @@ section#new div.label-float label {
 
 section#new div.label-float input:focus + label {
     margin-top: 0px;
+    font-size: 12px;
 }
 
 section#new button {
