@@ -18,10 +18,22 @@ class Musica(db.Model):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    musicas = Musica.query.all()
+    return render_template("index.html", musicas = musicas)
 
-@app.route("/new")
+@app.route("/new", methods=['GET','POST'])
 def new():
+    if(request.method == 'POST'):
+        musica = Musica(
+            request.form['nome'],
+            request.form['artista'],
+            request.form['link']
+        )
+        db.session.add(musica)
+        db.session.commit()
+
+        return redirect("/#playlist")
+        
     return render_template("new.html")
 
 @app.route("/edit/<id>")

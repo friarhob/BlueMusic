@@ -55,18 +55,20 @@
                 </tr>
             </thead>
             <tbody>
+                {% for musica in musicas %}
                 <tr>
-                    <td>1</td>
-                    <td>Teste</td>
-                    <td>Teste</td>
+                    <td>{{musica.id}}</td>
+                    <td>{{musica.nome}}</td>
+                    <td>{{musica.artista}}</td>
                     <td>
-                        <audio controls src=""></audio>
+                        <audio controls src="{{musica.link}}"></audio>
                     </td>
                     <td>
                         <a href="">Editar</a>
                         <a href="">Apagar</a>
                     </td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </section>
