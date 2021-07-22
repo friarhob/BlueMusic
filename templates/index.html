@@ -65,13 +65,36 @@
                     </td>
                     <td>
                         <a href="/edit/{{musica.id}}">Editar</a>
-                        <a href="/delete/{{musica.id}}">Apagar</a>
+                        <a href="/{{musica.id}}">Apagar</a>
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </section>
+
+    {% if musica != undefined %}
+
+    <section class="modal">
+        <div id="card">
+            <a href="/#playlist" id="fechar">
+                <span class="material-icons">
+                    close
+                </span>
+            </a>
+            <h2>Confirmação</h2>
+            <hr>
+            <!-- <p>Deseja realmente apagar a música ?</p> -->
+            <p>Deseja realmente apagar a música {{musica.nome}}?</p>
+            <div id="btns">
+                <a class="btn-cancelar" href="/#playlist">Cancelar</a>
+                <!-- <a class="btn-apagar" href="/delete/">Apagar</a> -->
+                <a class="btn-apagar" href="/delete/{{musica.id}}">Apagar</a>
+            </div>
+        </div>
+    </section>
+
+    {% endif %}
 
     <footer>
         <hr>

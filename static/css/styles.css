@@ -257,3 +257,103 @@ section#new h4 {
 }
 
 /* End of new.html */
+
+/* Modal styles */
+
+section.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+section.modal div#card {
+    width: 30rem;
+    position: relative;
+    background-color: white;
+    border-radius: .5rem;
+    /* padding: 2rem; */
+}
+
+section.modal div#card a#fechar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    color: #FF01ed;
+    padding: 1.5rem;
+}
+
+section.modal div#card a#fechar:hover {
+    color: #3359ec;
+}
+
+section.modal div#card h2 {
+    padding: 2rem;
+    margin: 0;
+    color: #3359ec;
+}
+
+section.modal div#card hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.modal div#card p {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+section.modal div#card div#btns {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+section.modal div#card div#btns a {
+    text-decoration: none;
+    border-radius: .5rem;
+    padding: .9rem;
+    width: 7rem;
+    text-align: center;
+
+}
+
+section.modal div#card div#btns a.btn-cancelar {
+    background-color: white;
+    color: #FF01ed;
+    border: solid 1px #FF01ed;
+    margin-right: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+section.modal div#card div#btns a.btn-cancelar:hover {
+    background-color: #FF01ed;
+    color: white;
+}
+
+section.modal div#card div#btns a.btn-apagar {
+    background-color: white;
+    color: #3359ec;
+    border: solid 1px #3359ec;
+    transition: all .5s ease-in-out;
+}
+
+section.modal div#card div#btns a.btn-apagar:hover {
+    background-color: #3359ec;
+    color: white;
+}
+
+    /* End of modal styles */
