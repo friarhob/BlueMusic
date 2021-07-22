@@ -61,6 +61,7 @@ def delete(id):
     db.session.commit()
     return redirect("/#playlist")
 
+@app.route("/<id>")
 def modal(id):
     musica = Musica.query.get(id)
     return render_template('index.html', musica=musica)
